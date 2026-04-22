@@ -11,7 +11,7 @@ ${NAME}: ${OBJS}
 
 %.o: %.c get_next_line.h
 	${CC} ${CFLAGS} -c $< -o $@
-clean: ${OBJS}
+clean:
 	rm -rf ${OBJS}
 fclean: clean
 	rm -rf ${NAME}
