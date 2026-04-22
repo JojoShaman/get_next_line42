@@ -6,7 +6,7 @@
 /*   By: srosu <srosu@student.42belgium.be>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/22 00:14:28 by srosu            #+#    #+#              */
-/*   Updated: 2026/04/22 01:00:50 by srosu           ###   ########.fr        */
+/*   Updated: 2026/04/22 14:07:35 by srosu           ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,17 @@ size_t	ft_strlen(const char *str)
 	while (str[len])
 		len++;
 	return (len);
+}
+
+char	*ft_strchr(const char *str, int c)
+{
+	while (*str)
+	{
+		if (*str == (char) c)
+			return ((char *) str);
+		str++;
+	}
+	return (NULL);
 }
 
 char	*ft_strjoin(const char *s1, const char *s2)
