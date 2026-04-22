@@ -1,8 +1,8 @@
 *This project has been created as part of the 42 curriculum by **srosu**.*
 # GET_NEXT_LINE
 
-**keywords**: `Unix logic` · `File I/O` · `Static variables` · `Memory management`  
-**skills**: `Imperative programming · Rigor · Algorithms & AI`
+**keywords**: `Unix logic` 
+**skills**: `Rigor · Unix · Algorithms & AI`
 
 
 ## Description
