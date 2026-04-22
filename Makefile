@@ -7,10 +7,10 @@ OBJS = ${SRCS:.c=.o}
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-	rc rcs $@ $^
+	ar rcs $@ $^
 
 %.o: %.c get_next_line.h
-	CC CFLAGS -c $< -o $@
+	${CC} ${CFLAGS} -c $< -o $@
 clean: ${OBJS}
 	rm -rf ${OBJS}
 fclean: clean
